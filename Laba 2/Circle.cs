@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laba_2
+namespace scnd
 {
 
     //....Класс Круг....
-    class Circle : Geom_Figure, IPrint
+    public class Circle : Geom_Figure
     {
         public double radius { get; set; }
 
@@ -23,12 +23,21 @@ namespace Laba_2
 
         public override string ToString()
         {
-            return "Радиус: " + radius.ToString() + '\n' + "Площадь: " + Area().ToString() + '\n';
+            return "Круг с площадью:" + Area().ToString();
         }
 
-        public void Print()
+        public override void Print()
         {
-            Console.WriteLine("Круг:\n" + ToString());
+            Console.WriteLine(ToString());
+        }
+
+        public override int CompareTo(object obj)
+        {
+            Geom_Figure p = (Geom_Figure)obj;
+            if (this.Area() > p.Area()) { return 1; }
+            else if (this.Area() < p.Area()) { return -1; }
+            else if (this.Area() == p.Area()) { return 0; }
+            else { throw new NotImplementedException(); }
         }
     }
 }

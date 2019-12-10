@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace Laba_2
+namespace scnd
 {
     //....Интерфейс Iprint....
-    interface IPrint
+    public interface IPrint
     {
         void Print();
     }
 }
-

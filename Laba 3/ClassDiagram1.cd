@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Lab_03.Program" Collapsed="true">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimpleListProject.SimpleListItem&lt;T&gt;" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAIAAAA=</HashCode>
+      <FileName>SimpleList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimpleListProject.SimpleList&lt;T&gt;" Collapsed="true">
+    <Position X="3.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAAAAAAAAAFBAAAEQAAQAAAABAAAAAACAAAAAAgA=</HashCode>
+      <FileName>SimpleList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Lab_03.SimpleStack&lt;T&gt;" Collapsed="true">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>SimpleStack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SparseMatrix.Matrix&lt;T&gt;" Collapsed="true">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAACAAAAAAAAECAAAAAAAAAAAAAABAAAAAXAAAAA=</HashCode>
+      <FileName>SparseMatrix.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

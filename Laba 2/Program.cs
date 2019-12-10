@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laba_2
+namespace scnd
 {
     class Program
     {
@@ -12,11 +12,11 @@ namespace Laba_2
         static void Main(string[] args)
         {
             Console.Title = "Пахомкин Кирсан ИУ5-31Б";
-            Rectangle One = new Rectangle(4, 17); One.Print(); One.lngth = 18; One.wdth = 4; One.Print();
+            Rectangle One = new Rectangle(3, 16); One.Print(); One.lngth = 15; One.wdth = 2; One.Print();
 
-            Square Two = new Square(12); Two.Print();
+            Square Two = new Square(8); Two.Print();
 
-            Circle Three = new Circle(6); Three.Print();
+            Circle Three = new Circle(9); Three.Print();
 
             Console.ReadLine();
         }

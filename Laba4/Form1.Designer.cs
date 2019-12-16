@@ -35,6 +35,9 @@
             this.buttonSearch = new System.Windows.Forms.Button();
             this.labelTimeSearch = new System.Windows.Forms.Label();
             this.listBoxResult = new System.Windows.Forms.ListBox();
+            this.textBoxDist = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -76,7 +79,7 @@
             // 
             this.buttonSearch.Location = new System.Drawing.Point(629, 48);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(136, 42);
+            this.buttonSearch.Size = new System.Drawing.Size(136, 59);
             this.buttonSearch.TabIndex = 6;
             this.buttonSearch.Text = "Найти";
             this.buttonSearch.UseVisualStyleBackColor = true;
@@ -100,11 +103,39 @@
             this.listBoxResult.Size = new System.Drawing.Size(266, 184);
             this.listBoxResult.TabIndex = 8;
             // 
+            // textBoxDist
+            // 
+            this.textBoxDist.Location = new System.Drawing.Point(442, 81);
+            this.textBoxDist.Name = "textBoxDist";
+            this.textBoxDist.Size = new System.Drawing.Size(168, 26);
+            this.textBoxDist.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(330, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 20);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Расстояние";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(355, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 20);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Слово";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxDist);
             this.Controls.Add(this.listBoxResult);
             this.Controls.Add(this.labelTimeSearch);
             this.Controls.Add(this.buttonSearch);
@@ -128,6 +159,9 @@
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.Label labelTimeSearch;
         private System.Windows.Forms.ListBox listBoxResult;
+        private System.Windows.Forms.TextBox textBoxDist;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

@@ -80,5 +80,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Laba 6\Laba 5.csproj">
+      <Project>{21c2d57a-e118-4df3-bed7-63bbecab9490}</Project>
+      <Name>Laba 5</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

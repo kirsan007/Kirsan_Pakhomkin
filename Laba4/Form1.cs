@@ -1,13 +1,9 @@
-﻿using System;
+﻿using Laba5;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Laba4
@@ -53,26 +49,34 @@ namespace Laba4
             {
                 word = word.ToUpper();
                 List<string> res = new List<string>();
-                Stopwatch t = new Stopwatch();
-                t.Start();
-                foreach (string wrd in lst)
+                int maxdst;
+                if (!int.TryParse(this.textBoxDist.Text.Trim(), out maxdst))
                 {
-                    if (wrd.ToUpper().Contains(word))
+                    MessageBox.Show("Введены неверные данные.");
+                }
+                else
+                {
+                    Stopwatch t = new Stopwatch();
+                    t.Start();
+                    foreach (string wrd in lst)
                     {
-                        res.Add(wrd);
+                        int dst = Levenstain.Distance(wrd.ToUpper(), word);
+                        if (dst <= maxdst)
+                        {
+                            res.Add(wrd);
+                        }
                     }
-                }
-                t.Stop();
-                this.labelTimeSearch.Text = t.Elapsed.ToString();
-                this.listBoxResult.BeginUpdate();
-                this.listBoxResult.Items.Clear();
+                    t.Stop();
+                    this.labelTimeSearch.Text = t.Elapsed.ToString();
+                    this.listBoxResult.BeginUpdate();
+                    this.listBoxResult.Items.Clear();
 
-                foreach (string wrd in res)
-                {
-                    this.listBoxResult.Items.Add(wrd);
+                    foreach (string wrd in res)
+                    {
+                        this.listBoxResult.Items.Add(wrd);
+                    }
+                    this.listBoxResult.EndUpdate();
                 }
-                this.listBoxResult.EndUpdate();
-
             }
             else
             {

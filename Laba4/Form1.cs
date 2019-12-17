@@ -1,10 +1,10 @@
-﻿using Laba5;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using Laba5;
 
 namespace Laba4
 {
@@ -82,6 +82,11 @@ namespace Laba4
             {
                 MessageBox.Show("Необходимо выбрать файл и ввести слово для поиска");
             }
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
